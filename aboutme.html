@@ -1,22 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title> About Me</title>
-	<link href = "stylesheet.css" rel = "stylesheet" type = "text/css"
+<style> body {
+    background-color: #a5ff00;
+}
+</style>
+<span onclick="openNav()">Menu</span>
+<meta charset="utf-8">
+<title>Nav Bar</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 
-	<div class = "scrollmenu">
-	<a href="index.html">Home</a>
-	<a href="portfolio.html">Portfolio</a>
-	<a href="aboutme.html">About Me</a>
-	</div>
 
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <titletag>Menu:</titletag>
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="abooutme.html">About Me</a>
+</div>
+	<center><h1>About Me:</h1>
+	
+	<img src="portfolio_img.png">
 	
 	
+	<h1>Hello and welcome to my "about me" page. Here I will be discussing things about me that i feel are interesting to
+	know about me.</h1>
+	<href>
+	<h3>Name: Luis Lira<br>Grade: Senior<br>Favorite artist(currently): Kanye<br>Dream job: Rich Person</h3>
+	<src img="giphy.mp4">
 	
-	<h1>About Me</h1>
-	<img src= "images/200w.webp" height="200">
-<body>
+	</href>
+	
+	
+
+<!-- Use any element to open the sidenav -->
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  <style> body {
+    background-color: #a5ff00;
+}
+</style>
+</div>
+  <style> body {
+    background-color: #a5ff00;
+}
+</style>
+</body>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,9)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
 </html>
