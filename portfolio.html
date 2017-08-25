@@ -1,19 +1,67 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-	<meta charset="utf-8">
-	<title> My Webpage</title>
-	<link href = "stylesheet.css" rel = "stylesheet" type = "text/css"
+
+<style> body {
+    background-color: #a5ff00;
+}
+</style>
+<href onclick="openNav()">Menu</href>
+<meta charset="utf-8">
+
+<link href="style.css" rel="stylesheet" type="text/css" />
 </head>
+
 <body>
 
-	<div class = "scrollmenu">
-	<a href="index.html">Home</a>
-	<a href="portfolio.html">Portfolio</a>
-	<a href="aboutme.html">About Me</a>
-	</div>
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <titletag>Menu:</titletag>
+  <a href="index.html">Home</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="aboutme.html">About Me</a>
+  
+</div>
+	<center><h1>My Portfolio:</h1>
+	<SPAN STYLE=”background-image: url(//www.makeuseof.com/wp-content/uploads/2009/08/HTMLEffects03.png ); font-size: 20pt”>MakeUseOf presents…</SPAN>
+	<img src= "portfolio_img.png">
 	
-	<h1>My Portfolio</h1>
-	<img src= "images/portfolio.jpg" height="200">
-<body>
+	
+	
+	
+	<table align="center" border="9px">
+            <colgroup><col width="230">
+            <col width="430">
+            <col width="330">
+            </colgroup><tbody><tr>
+                <th><b>Project Name:</b></th><th><b>Project Description:</b></th><th><b>Project Link:</b></th>
+            </tr>
+            <tr>
+			
+
+<!-- Use any element to open the sidenav -->
+
+
+<!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
+<div id="main">
+  
+</div>
+</body>
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,9)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft = "0";
+    document.body.style.backgroundColor = "white";
+}
+</script>
+
 </html>
