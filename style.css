@@ -16,7 +16,7 @@
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #a5ff00;
     display: block;
     transition: 0.3s
 }
@@ -35,6 +35,8 @@
     margin-left: 50px;
 }
 
+
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
     transition: margin-left .5s;
@@ -45,4 +47,13 @@
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+titletag {
+	padding: 15px 15px 15px 32px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #a5ff00;
+    display: block;
+    transition: 0.3s
 }
